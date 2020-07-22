@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        function myFn() {
+            var foo = 'peekaboo!';
+            console.log(foo); // 'peekaboo!'
+            }
+            console.log(foo); // ReferenceError: foo is not defined//
+            /*
+            Using var, variables are function-scoped because their 
+            visibility is limited to the function. When you try to 
+            use it outside of the function, you’ll get an error.
+            */
+            if (true) {
+                var foo = 'peekaboo!';
+                let bar = 'i see u';
+                const baz = 'baby blue!';
+                console.log(foo); // 'peekaboo!';
+                console.log(bar); // 'i see u';
+                console.log(baz); // 'baby blue!';
+                }
+                console.log(foo); // 'peekaboo!';
+                console.log(bar); // ReferenceError: bar is not defined
+                console.log(baz); // ReferenceError: baz is not defined
+                /*
+               Notice the visibility of foo isn’t limited by the if-statement block. 
+               However, both bar and baz are limited in visibility to the block of code.
+               This concept of scope is the most prominent distinction between the 
+               old-fashioned var and modern let/const. 
+               
+                keyword      Function vs Block-scope         Redifinable ?
+               ---------    -------------------------       ---------------
+                var         function-scope                   yes
+                let         block-scope                      yes
+                const       block-scope                      no
+                
+                */
+    </script>
