@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    
+</head>
+<body>
+    <p id="title"></p>
+    <p id="time"></p>
+    <button id="dark">Switch to Dark Mode</button>
+    
+    <script>
+        const name = prompt("Enter your name","Anonymous");
+        title.innerText += `Hello ${name}`
+
+        const ctime = document.getElementById('time');
+
+
+    function clock()
+        {
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            ctime.innerText = time;
+        }
+        clock();
+        const dmode = document.getElementById('dark');
+
+        dmode.onclick = function changeColor(){
+    
+            document.body.style.backgroundColor = 'black';
+            document.body.style.color = 'white';
+            document.body.style.fontFamily = 'Helvetica';
+   
+        }
+
+    
+        
+          
+
+
+
+
+    </script>
+    
+</body>
+</html>

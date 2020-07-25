@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-color</title>
+</head>
+<script type="text/javascript">
+console.log("assignment six,first question ")
+    var c = ["blue", "black", "yellow", "red","pink"];//colour option
+    var currentColorIndex = 0;
+  
+    function changeColor() {//declration of function
+      document.bgColor = c[currentColorIndex];
+      currentColorIndex = (currentColorIndex + 1) % c.length;
+      setTimeout(changeColor, 5000);
+    }
+  
+  </script>
+  
+  <body onload="changeColor()">
+    <h1 style="background-color: cornsilk; text-align: center;">Home Work</h1>
+  </body>
+</html>
