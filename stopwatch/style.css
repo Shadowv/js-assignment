@@ -1,0 +1,14 @@
+.container{
+    height:300px;
+    widows: 100px;
+}
+
+#display{
+    widows: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin:0px auto;
+}
+.buttons{
+    text-align: center;
+}
